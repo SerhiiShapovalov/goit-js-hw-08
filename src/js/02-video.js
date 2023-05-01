@@ -18,12 +18,3 @@ const getCurrentTime = function (currentTime) {
 player.on('timeupdate', throttle(getCurrentTime, 1000));
 
 player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_TIME_KEY)) || 0);
-
-// player
-//   .setColor('#d8e0ff')
-//   .then(function (color) {
-//     console.log('The new color value: #D8E0FF');
-//   })
-//   .catch(function (error) {
-//     console.log('An error occurred while setting the color');
-//   });
