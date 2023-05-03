@@ -25,12 +25,17 @@ function reloadPage() {
 
 function onFormSubmit(e) {
   e.preventDefault();
-  console.log({ email: email.value, message: message.value });
 
-  if (email.value === '' || message.value === '') {
+  // if (email.value === '' || message.value === '') {
+  //   return alert('Должны быть заполнены все поля!');
+  // } else if (email.value !== '' && message.value !== '') {
+  //   console.log({ email: email.value, message: message.value });
+  // }
+  if (email.value !== '' && message.value !== '') {
+    console.log({ email: email.value, message: message.value });
+  } else {
     return alert('Должны быть заполнены все поля!');
   }
-
   localStorage.removeItem(LOCAL_KEY);
   e.currentTarget.reset();
   dataForm = {};
