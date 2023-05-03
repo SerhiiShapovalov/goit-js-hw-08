@@ -26,11 +26,6 @@ function reloadPage() {
 function onFormSubmit(e) {
   e.preventDefault();
 
-  // if (email.value === '' || message.value === '') {
-  //   return alert('Должны быть заполнены все поля!');
-  // } else if (email.value !== '' && message.value !== '') {
-  //   console.log({ email: email.value, message: message.value });
-  // }
   if (email.value !== '' && message.value !== '') {
     console.log({ email: email.value, message: message.value });
   } else {
